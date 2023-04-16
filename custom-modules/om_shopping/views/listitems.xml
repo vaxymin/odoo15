@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="list_action" model="ir.actions.act_window">
+        <field name="name">List</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">shopping.listitem</field>
+        <field name="view_mode">kanban,tree,form</field>
+        <field name="help" type="html">
+        <p class="o_view_nocontent_smiling_face">
+            Create a shopping list!
+        </p>
+        </field>
+    </record>
+    <menuitem
+        id="shopping_root"
+        name="Shopping"
+        sequence="6"/>
+    
+    <menuitem
+        id="shopping_list_root"
+        name="List"
+        parent = "shopping_root"
+        sequence="6"/>
+
+    <menuitem
+        id="list_item"
+        name="Item"
+        parent = "shopping_list_root"
+        action = "list_action"
+        sequence="6"/>
+</odoo>

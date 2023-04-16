@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_shopping_listitem,access.shopping.list,model_shopping_listitem,,1,1,1,1
